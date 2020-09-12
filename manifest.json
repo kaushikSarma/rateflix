@@ -1,0 +1,13 @@
+{
+    "manifest_version" : 2,
+    "name" : "RateFlix",
+	"version" : "1.0",
+    "description" : "tiny util to enhance the netflix UI",
+    "author" : "kaushik.sarma",
+    "content_scripts": [
+		{
+		  "matches": ["*://*.netflix.com/*"],
+		  "js": ["background.js", "config.js"]
+		}
+	  ]
+}
